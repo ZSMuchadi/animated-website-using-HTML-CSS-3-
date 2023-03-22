@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    /* display: flex; */
+}
+.logo{
+    width: 25%;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+  /* background-image: url(https://media.istockphoto.com/id/1439973042/vector/red-heart-flat-icon-the-symbol-of-love-vector-illustration.jpg?s=612x612&w=0&k=20&c=i2vL1DR3XaqPcLAUBiaQzeQOj8uqksXED6wI66MO3h0=); */
+  background-size:contain;
+  background-repeat: no-repeat
+}
+ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+    
+}
+ul li a{
+    width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+#f{
+    color: #00b894;
+    /* transition: transform 1s ease-in; */
+} 
+/* 
+.logo:hover{
+    color: darkslategrey;
+    animation: up-to-down 1s ease-in;
+} */
+.logo img{
+    height: 50px;
+    /* background-color: red; */
+}
+.logo{
+    animation: zoom-in-zoom-out .5s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.25);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    75%{
+        transform: scale(1.75);
+    }
+    100%{
+        transform: scale(2.0);
+    }
+}
+body{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+      url("https://media.istockphoto.com/id/1157789866/photo/modern-computer-laptop-with-blank-screen-on-counter-barand-window-view.jpg?s=612x612&w=0&k=20&c=Idggc96ENAdz7R_ANTzvWpMTbaUcTV4JvJYKJHAD71A="); */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),url("https://media.istockphoto.com/id/1236824686/vector/abstract-white-square-shape-with-futuristic-concept-background-space-for-your-design.jpg?s=612x612&w=0&k=20&c=KTnnHX0TUbRKVXZY7rqNGdVy2j-NOiQW84zxgn9iNFE=");
+    /* background-size: 100% 100vh; */
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+
+  section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+
+  section .btnOne {
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+  }
+  .btnOne:hover {
+    background: #00b894;
+    color: white;
+  }
+  section .btnTwo {
+    background: #00b894;
+    color: white;
+  }
+
+  .btnTwo:hover {
+    background: #fff;
+    color: #000;
+  }
+  .change_content:after {
+    content: "";
+    animation: changetext 15s infinite linear;
+    color: #00b894;
+  }
+  
+
+  @keyframes changetext {
+    0% {
+      content: "Red";
+      color: red;
+    }
+    20% {
+      content: "Pink";
+      color: pink;
+    }
+    35% {
+      content: "Orange";
+      color: orange;
+    }
+    60% {
+      content: "Green";
+      color: green;
+    }
+    80% {
+      content: "Yellow";
+      color: yellow;
+    }
+    100% {
+      content: "Grey";
+      color: gray;
+    }
+  }
+  .btnOne,.btnTwo{
+    margin: 0 5px;
+  }
+  
+  
